@@ -17,7 +17,8 @@ dependencies: [
 #### Initialization
 
 To initialize API instance you need to obtain [API token](https://deepai.org/docs#apis "API token") from your Deep AI website. Login deepai.org site to get API key.
-![Uploading Screenshot 2024-11-27 at 9.07.59 PM.png…]()
+
+<img width="1273" alt="Screenshot 2024-11-27 at 9 07 59 PM" src="https://github.com/user-attachments/assets/d1e92d04-f653-4726-b370-c80c9c6ec033">
 
 Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service.
 
