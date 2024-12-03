@@ -40,7 +40,7 @@ extension DeepAISDK {
         setNetworkCall(apiEndPoint: apiEndPoint, complete: complete)
     }
     
-    public func sendHeadshotsRequest(_ data: Data,prompt:String,editType:ImageEditType ,complete: @escaping @Sendable (Bool,String) -> Void) {
+    public func sendHeadshotsRequest(_ data: Data,prompt:String,complete: @escaping @Sendable (Bool,String) -> Void) {
         setNetworkCall(apiEndPoint: ImageEditEndpoint.headshots(data,prompt), complete: complete)
     }
 }
