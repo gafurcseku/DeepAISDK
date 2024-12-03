@@ -1,6 +1,6 @@
 import Foundation
 
-extension DeepAISDK {
+public extension DeepAISDK {
     
     func sendImageEditRequest(_ data: Data,editType:ImageEditType ,complete: @escaping @Sendable (Bool,String) -> Void) {
         
