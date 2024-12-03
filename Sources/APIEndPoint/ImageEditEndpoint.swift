@@ -4,7 +4,7 @@ import Alamofire
 enum ImageEditEndpoint : NetworkRoutes {
     case colorizer(_ data: Data)
     case backgroundRemover(_ data: Data)
-    case headshots(_ data: Data)
+    case headshots(_ data: Data, _ text:String)
     case selfieGenerator(_ data: Data)
     case superResolution(_ data: Data)
     case upscales(_ data: Data)
@@ -37,8 +37,10 @@ enum ImageEditEndpoint : NetworkRoutes {
     
     var query: [String : Any] {
         switch self {
-        case .colorizer(let data),.backgroundRemover(let data),.headshots(let data),.selfieGenerator(let data),.superResolution(let data), .upscales(let data), .expand(let data):
+        case .colorizer(let data),.backgroundRemover(let data),.selfieGenerator(let data),.superResolution(let data), .upscales(let data), .expand(let data):
             return ["data": data]
+        case .headshots(let data, let text):
+            return ["data": data, "text":text]
         }
     }
     

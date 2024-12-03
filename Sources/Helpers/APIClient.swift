@@ -53,6 +53,9 @@ public class APIClient {
             if let data = apiEndPoint.query["data"] as? Data {
                 multipartFormData.append(data, withName: "image", fileName: "image.png", mimeType: "image/png")
             }
+            if let text = apiEndPoint.query["text"] as? String {
+                multipartFormData.append(Data(text.utf8), withName: "text")
+            }
         }, to: apiEndPoint.path,headers:deepai.baseMultipartHeaders)
         .validate(statusCode: 200..<300)
         .validate(contentType: content)
