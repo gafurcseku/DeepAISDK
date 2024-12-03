@@ -133,3 +133,28 @@ deepAIsdk.sendImageEditRequest(data: imageData, editType: .expand) { isSuccess, 
 }
 
 ```
+
+# AI Image Tools - Open Collaboration 🎨✨
+
+This project is a collaborative effort to build and enhance tools for AI Image Generation and AI Image Editing.
+
+We welcome contributions from everyone! 🚀 Whether you're adding a new function, improving existing ones, or completing missing features, your input is highly valued.
+### Current Focus Areas 🛠️
+
+Here are some API endpoints that need attention:
+* **AI Image Generator**: Help us improve or implement new features for generating stunning AI images.
+* **AI Image Editor**: Expand the capabilities of our editor or refine existing ones.
+
+### How to Contribute
+
+* Fork this repository and clone it locally.
+* Check out the issues section for tasks or submit your own suggestions.
+* Submit a pull request with your updates, including a clear description of your changes.
+
+### Guidelines
+
+    Please ensure your code follows best practices and is well-documented.
+
+Join us in making this project even better! 💻✨
+
+Happy coding! 🎉
